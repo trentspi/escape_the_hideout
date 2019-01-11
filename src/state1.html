@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>ESCAPE THE HIDEOUT</title>
+	<link href="index.css" rel="stylesheet">
+	<!--[if IE]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script language="javascript" type="text/javascript">
+		$(document).ready(function() {
+				var obj = document.createElement("audio");
+				obj.src="click.mp3";
+				obj.volume=0.75;
+				obj.autoPlay=false;
+				obj.preLoad=true;       
+
+				$(".clickSound").click(function() {
+						obj.play();
+				});
+
+		});
+	</script>
+</head>
+
+<body>
+
+  <img src="../states/state1.png" class="center" usemap="state1-map">
+
+	<map name="state1-map" class="clickSound">
+    <area target="" alt="desktop" title="desktop" href="state-desktop.html" coords="1095,32,1135,71" shape="rect">
+    <area target="" alt="1" title="1" coords="430,272,559,387" shape="rect">
+    <area target="" alt="2" title="2" coords="592,273,722,385" shape="rect">
+    <area target="" alt="3" title="3" coords="757,274,888,385" shape="rect">
+    <area target="" alt="4" title="4" coords="431,410,558,520" shape="rect">
+    <area target="" alt="5" title="5" coords="594,410,723,520" shape="rect">
+    <area target="" alt="6" title="6" href="state-keypad-1.html" coords="756,409,888,520" shape="rect">
+    <area target="" alt="7" title="7" coords="428,544,560,658" shape="rect">
+    <area target="" alt="8" title="8" coords="593,544,725,656" shape="rect">
+    <area target="" alt="9" title="9" coords="759,547,889,657" shape="rect">
+	</map>
+</body>
+
+
+</html>
